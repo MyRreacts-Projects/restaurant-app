@@ -15,14 +15,18 @@
 //     )
 // }
 // export default Catageories;
-
+import '../components/catageories.css'
 function Categories({ filterItems, catageories }) {
   return (
-    <>
-      {catageories.map((cat) => (
-        <button onClick={() => filterItems(cat)}>{cat}</button>
+   <div className="container">
+       <h1>My Restaurant Small App</h1>
+    <div className='sub-cat'>
+      
+       {catageories.map((cat) => (
+        <button onClick={() => filterItems(cat)} className='button'>{cat}</button>
       ))}
-    </>
+    </div>
+   </div>
   );
 }
 

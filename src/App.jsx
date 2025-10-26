@@ -34,6 +34,7 @@
 
 
 import { useState } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Catageories from "./components/catageories";
 import Menu from "./components/menu";
 import items from "./components/data";
@@ -53,9 +54,9 @@ function App() {
   }
 
   return (
-    <div>
-      <Catageories catageories={catageories} filterItems={filterItems} />
-      <Menu items={menuItem} />
+    <div className="container">
+      <div><Catageories catageories={catageories} filterItems={filterItems} />
+      <Menu items={menuItem} /></div>
     </div>
   );
 }

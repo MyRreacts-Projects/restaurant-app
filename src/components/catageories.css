@@ -1,0 +1,17 @@
+
+.button{padding:5px 20px;
+background-color: aqua;
+margin-left: 10px;
+border-radius: 10px;
+
+font-weight: bold;}
+.sub-cat{margin-top: 20px;
+}
+
+@media(max-width:500px){.button{padding:5px 10px;
+background-color: aqua;
+margin-left: 5px;
+border-radius: 10px;
+
+
+}}

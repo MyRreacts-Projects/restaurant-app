@@ -1,24 +1,29 @@
 import React from "react";
-
+import '../components/menu.css'
 
 const Menu =({items})=>{
     return(
         <main>
             <div className="container">
+              
+                
             <div className="row">
+               
 
 {items.map((item)=>{
 // const {id,img,price,desc,title} = item
 return(
-    <div className="col-6" key={item.id}>
-        <div>
+    <div className="sub" key={item.id}>
+        <div className=" card sub-a">
             <img src={item.img} alt="imges" />
-            <h4>{item.title}</h4>
+            <div className="detail"><h4>{item.title}</h4>
             <h6>{item.price}</h6>
-            <p>{item.desc}</p>
+            <p>{item.desc}</p></div>
         </div>
        
     </div>
+
+   
     
 )
 })}
